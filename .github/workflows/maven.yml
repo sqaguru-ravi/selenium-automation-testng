@@ -44,7 +44,7 @@ jobs:
     - name: Zip the test results
       if: always()
       run: |
-        zip -r test-results.zip test-results/
+        zip -r test-result.zip test-result/
 
     - name: Upload test results artifact
       if: always()
