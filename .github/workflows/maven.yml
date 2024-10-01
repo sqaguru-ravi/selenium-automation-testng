@@ -41,5 +41,17 @@ jobs:
         JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
         JIRA_XRAY_BASE_URL: ${{ secrets.JIRA_XRAY_BASE_URL }}
 
+    - name: Zip the test results
+      if: always()
+      run: |
+        zip -r test-results.zip test-results/
+
+    - name: Upload test results artifact
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: test-results.zip
+
 
     
