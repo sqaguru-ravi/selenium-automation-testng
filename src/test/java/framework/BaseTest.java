@@ -189,7 +189,7 @@ public class BaseTest {
 		String username = System.getenv("JIRA_USERNAME");
 		String password = System.getenv("JIRA_PASSWORD");
 
-		String projectKey = "XRAYT";
+		String projectKey = System.getenv("JIRA_PROJECT_KEY");
 		String summary = "Test execution summary " + getCurrentDateTimeString();
 		String description = "Test execution description 4";
 		// Call the createTestExecution function
@@ -367,7 +367,7 @@ public class BaseTest {
 	public void setJiraTestKey(String jiraTestCaseKey) {
 		// return driver.get();
 		this.jiraTestCaseKey = jiraTestCaseKey;
-		System.out.println("updating jira status: EXECUTING");
+		System.out.println("updating jira status - " + jiraTestCaseKey +" : EXECUTING");
 		try {
             XRayAPI.updateTestResult(jiraXrayApiToken, testExecutionKey, jiraTestCaseKey, "EXECUTING");
         } catch (Exception e) {

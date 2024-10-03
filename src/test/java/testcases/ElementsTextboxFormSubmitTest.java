@@ -11,7 +11,7 @@ public class ElementsTextboxFormSubmitTest extends BaseTest {
 	// XRAYT-19
 	@Test
 	public void verifyTexBoxFormSubmitTest() {
-		setJiraTestKey("XRAYT-19");
+		setJiraTestKey("QDA1-11");
 
 		getExtentTest().info("Test execution started");
 
@@ -41,8 +41,5 @@ public class ElementsTextboxFormSubmitTest extends BaseTest {
 
 		elementsTextBoxFomPage.verifySubmitAnotherResponseLink();
 		getExtentTest().pass("Form submission and verification successful");
-
-		System.out.println("test002");
-		System.out.println(jiraXrayApiToken);
 	}
 }

@@ -11,7 +11,7 @@ public class ElementsCheckboxFormTest extends BaseTest {
 	// XRAYT-13
 	@Test
 	public void verifyCheckboxFormSubmitTest1() {
-		setJiraTestKey("XRAYT-13");
+		setJiraTestKey("QDA1-5");
 
 		getExtentTest().info("Test execution started");
 
@@ -43,7 +43,7 @@ public class ElementsCheckboxFormTest extends BaseTest {
 	// XRAYT-14
 	@Test
 	public void verifyCheckboxFormSubmitTest2() {
-		setJiraTestKey("XRAYT-14");
+		setJiraTestKey("QDA1-6");
 
 		getExtentTest().info("Test execution started");
 

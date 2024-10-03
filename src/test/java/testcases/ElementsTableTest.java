@@ -10,7 +10,7 @@ public class ElementsTableTest extends BaseTest {
 	// XRAYT-18
 	@Test
 	public void deleteAndVerifyTableRecordTest() {
-		setJiraTestKey("XRAYT-18");
+		setJiraTestKey("QDA1-10");
 
 		getExtentTest().info("Test execution started");
 
@@ -52,9 +52,6 @@ public class ElementsTableTest extends BaseTest {
 		elementsTablePage.clickOnTablePanel();
 
 		Assert.assertNotEquals("AA", "AAa", "this test should fail");
-
-		System.out.println("test001");
-		System.out.println(jiraXrayApiToken);
 
 		getExtentTest().pass("Form submission and verification successful");
 	}

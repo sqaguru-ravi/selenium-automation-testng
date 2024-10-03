@@ -10,7 +10,7 @@ public class ElementsButtonEventsTest extends BaseTest{
 	// XRAYT-10
 	@Test
 	public void verifyClickButtonTest() {
-		setJiraTestKey("XRAYT-10");
+		setJiraTestKey("QDA1-2");
 
 		getExtentTest().info("Test execution started");
 
@@ -53,7 +53,7 @@ public class ElementsButtonEventsTest extends BaseTest{
 	// XRAYT-11
 	@Test
 	public void verifyDoubleClickButtonTest() {
-		setJiraTestKey("XRAYT-11");
+		setJiraTestKey("QDA1-3");
 
 		getExtentTest().info("Test execution started");
 
@@ -101,7 +101,7 @@ public class ElementsButtonEventsTest extends BaseTest{
 	// XRAYT-12
 	@Test
 	public void verifyRightClickButtonTest() {
-		setJiraTestKey("XRAYT-12");
+		setJiraTestKey("QDA1-4");
 
 		getExtentTest().info("Test execution started");
 

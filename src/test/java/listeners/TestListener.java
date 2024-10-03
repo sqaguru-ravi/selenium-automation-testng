@@ -48,13 +48,9 @@ public class TestListener implements ITestListener {
         String testExecutionKey = BaseTest.testExecutionKey;
         String jiraTestCaseKey = ((BaseTest) testClass).jiraTestCaseKey;
         // Object jiraTestCaseKey =  result.getAttribute("jiraTestCaseKey");
-        
-
-
-        System.out.println("test004");
-        System.out.println(jiraXrayApiToken);
         System.out.println(testExecutionKey);
         System.out.println(jiraTestCaseKey);
+        System.out.println("updating jira status - " + jiraTestCaseKey +" : " + status);
         try {
             XRayAPI.updateTestResult(jiraXrayApiToken, testExecutionKey, jiraTestCaseKey, status);
         } catch (Exception e) {
@@ -66,8 +62,7 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().pass("Test Passed");
-
-        System.out.println("updating jira status: PASSED");
+        
         updateTestResultInJira(result, "PASSED");
         // updateTestResult(String token, String testExecutionKey, String testKey, String status)
 
@@ -77,7 +72,6 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         test.get().fail(result.getThrowable());
 
-        System.out.println("updating jira status: PASSED");
         updateTestResultInJira(result, "FAILED");
 
         // Capture screenshot

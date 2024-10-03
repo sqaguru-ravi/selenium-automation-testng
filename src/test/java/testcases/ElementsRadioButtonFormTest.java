@@ -10,7 +10,7 @@ public class ElementsRadioButtonFormTest extends BaseTest {
 	// XRAYT-15
 	@Test
 	public void submitMaleGenderAndVerifyTest() {
-		setJiraTestKey("XRAYT-15");
+		setJiraTestKey("QDA1-7");
 
 		getExtentTest().info("Test execution started");
 
@@ -38,7 +38,7 @@ public class ElementsRadioButtonFormTest extends BaseTest {
 	// XRAYT-16
 	@Test
 	public void submitOtherGenderAndVerifyTest() {
-		setJiraTestKey("XRAYT-16");
+		setJiraTestKey("QDA1-8");
 
 		getExtentTest().info("Test execution started");
 
@@ -66,7 +66,7 @@ public class ElementsRadioButtonFormTest extends BaseTest {
 	// XRAYT-17
 	@Test
 	public void submitFemaleGenderAndVerifyTest() {
-		setJiraTestKey("XRAYT-17");
+		setJiraTestKey("QDA1-9");
 
 		getExtentTest().info("Test execution started");
 
