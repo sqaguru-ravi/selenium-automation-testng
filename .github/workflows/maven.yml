@@ -40,6 +40,7 @@ jobs:
         JIRA_XRAY_CLIENT_SECRET: ${{ secrets.JIRA_XRAY_CLIENT_SECRET }}
         JIRA_BASE_URL: ${{ secrets.JIRA_BASE_URL }}
         JIRA_XRAY_BASE_URL: ${{ secrets.JIRA_XRAY_BASE_URL }}
+        JIRA_PROJECT_KEY: ${{ secrets.JIRA_PROJECT_KEY }}
 
     - name: Zip the test results
       if: always()
