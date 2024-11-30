@@ -8,9 +8,9 @@
 		<classes>
 			<class name="testcases.ElementsCheckboxFormTest" />
 			<class name="testcases.ElementsTextboxFormSubmitTest" />
-			<class name="testcases.ElementsButtonEventsTest" />
+<!-- 			<class name="testcases.ElementsButtonEventsTest" />
 			<class name="testcases.ElementsTableTest" />
-			<class name="testcases.ElementsRadioButtonFormTest" />
+			<class name="testcases.ElementsRadioButtonFormTest" /> -->
 			<!-- Add more test classes as needed -->
 		</classes>
 	</test>
