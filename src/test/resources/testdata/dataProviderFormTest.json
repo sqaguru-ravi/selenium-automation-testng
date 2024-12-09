@@ -1,0 +1,34 @@
+[
+    {
+        "username" : "Santosh",
+		"email" : "santosh@sqaguru.co.in",
+		"password" : "santosh123",
+        "address": {
+            "country": "India"
+        }
+    },
+    {
+        "username" : "Santosh1",
+		"email" : "santosh1@sqaguru.co.in",
+		"password" : "santosh1231",
+        "address": {
+            "country": "US"
+        }
+    },
+    {
+        "username" : "Santosh2",
+		"email" : "santosh@sqaguru.co.in2",
+		"password" : "santosh1232",
+        "address": {
+            "country": "Japan"
+        }
+    },
+    {
+        "username" : "Santosh3",
+		"email" : "santosh@sqaguru.co.in3",
+		"password" : "santosh1233",
+        "address": {
+            "country": "Spain"
+        }
+    }
+]
